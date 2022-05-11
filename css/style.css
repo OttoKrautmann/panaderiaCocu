@@ -1,0 +1,11 @@
+.logo{
+    height: 100px;
+}
+
+
+@media all and (max-width: 576px){
+    .imgbanner{
+        height: 200px;
+        object-fit: cover;
+    }
+}

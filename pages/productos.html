@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Otto Krautmann" />
+    <meta
+      name="keywords"
+      content="panaderia; dulce; salado; pan; panes; factura; facturas; tortilla; tortillas; bollo; bollos"
+    />
+    <meta name="description" content="productos de panaderia" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Nuestros productos</title>
+  </head>
+  <body>
+    <header class="navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/cocu_logo-450.png" alt="logo de la empresa" height="100">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  href="../index.html"
+                  class="nav-link"
+                 
+                  id="inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="productos.html"  aria-current="page" class="nav-link active">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a href="historia.html" class="nav-link">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container my-5 text-center">
+        <h1 class="display-1">Galería de productos</h1>
+        <hr>
+        <article class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3 my-3">
+            <div class="card">
+              <img src="../img/productos/Croissant_00018_portfolio1.jpg" class="card-img-top" alt="croissant">
+              <div class="card-body">
+                <h5 class="card-title">Croissant<span class="badge rounded-pill bg-danger ms-2">Nuevo</span></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalDetalleProductoCroissant">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-3">
+            <div class="card">
+              <img src="../img/productos/Panes-de-campo-corte_00162_portfolio1.jpg" class="card-img-top" alt="pan de campo">
+              <div class="card-body">
+                <h5 class="card-title">Pan de Campo</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary disabled">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-3">
+            <div class="card">
+              <img src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg" class="card-img-top" alt="tarta cabsha">
+              <div class="card-body">
+                <h5 class="card-title">Tarta Cabsha</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetalleProductoCabsha">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-3">
+            <div class="card">
+              <img src="../img/productos/Pan-de-uva-corte_00058_portfolio1.jpg" class="card-img-top" alt="pan de uva">
+              <div class="card-body">
+                <h5 class="card-title">Pan de uva</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary" href="pandeuva.html">Ver detalle</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- Modales -->
+    <div class="modal fade" id="modalDetalleProductoCroissant" tabindex="-1" aria-labelledby="Modal del croissant" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Croissant</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../img/productos/Croissant_00018_portfolio1.jpg" class="w-100" alt="croissant">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptas sapiente est molestiae praesentium eligendi.</p>
+            <p>Precio: <b>$40</b></p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalDetalleProductoCabsha" tabindex="-1" aria-labelledby="Modal del cabsha" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tarta Cabsha</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg" class="w-100" alt="Tarta Cabsha">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptas sapiente est molestiae praesentium eligendi.</p>
+            <p>Precio: <b>$1000</b></p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white-50 py-3">
+      <section class="container">
+          <article class="row">
+              <div class="col-sm-12 col-md-2 d-flex justify-content-center">
+                  <img src="../img/cocu_logo-450.png" class="logo" alt="logo">
+              </div>
+              <div class="col-sm-0 col-md-2">                    
+              </div>                
+              <div class="col-sm-12 col-md-4">
+                  <p class="fw-bold fs-5">Horario de atención:</p>
+                  <p class="fs-6">Lunes a viernes: 09hs-18hs<br>Sábados, domingos y feriados: 09hs-14hs</p>              
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <p class="fw-bold fs-5">Síguenos en nuestras redes:</p>  
+                  <a href="https://facebook.com" target="_blank" class="text-white-50"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-white-50 mx-5"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" class="text-white-50"
+              ><i class="bi bi-twitter fs-4"></i>
+            </a>                    
+              </div>
+          </article>
+      </section>
+  </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
